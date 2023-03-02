@@ -18,8 +18,15 @@ function mediaIdade(vetor)
 {
     let soma = 0;
 
-    for (idade of vetor)
-        soma += idade;
+    for (user of vetor)
+        soma += user.age;
 
     return soma / vetor.length;
+}
+
+function mediaIdadeReduce(vetor)
+{
+    let somaIdade = vetor.reduce((sum, user) => { sum+user.age });
+
+    return somaIdade / vetor.length;
 }
