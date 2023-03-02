@@ -30,3 +30,19 @@ function mediaIdadeReduce(vetor)
 
     return somaIdade / vetor.length;
 }
+
+// trazer a maior soma dos elementos do subarray
+function subSomaMax(vetor)
+{
+    let somaMax = 0;
+    let somaAtual = 0;
+    
+    for (number of vetor)
+    {
+        somaAtual += number;
+        somaAtual = max(0, somaAtual);
+        somaMax = max(somaAtual, somaMax);
+    }
+
+    return somaMax;
+}
